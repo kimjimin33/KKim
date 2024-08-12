@@ -29,8 +29,8 @@ void main()
 	// char : 문자
 	// bool : 참(true), 거짓(false)
 
-	int year = 00;
-	char name[128] = "김지민";
+	int year;
+	char name[128];
 
 	// 문자열이 조금 독특함
 	// char => 문자열이 아니라 문자! => a b c와 같은 문자 하나만 담을 수 있음
@@ -42,14 +42,19 @@ void main()
 	// 실수 : %s
 	// 문자 : %c
 
-	printf("year : %d\n", year);
-	printf("name : %s\n", name);
 
-	printf("year : %d, name : %s\n", year, name);
 
 	//실습
 	//printf("제 이름은 김지민입니다.");
 	//printf("저는 00년생 입니다.);
+
+	int age = 25;
+	char hobby[128] = "game";
+
+
+
+	printf("제 나이는 %d입니다.\n", age);
+	printf("제 취미는 %s입니다.\n", hobby);
 
 
 
