@@ -11,7 +11,7 @@ void main()
 	{
 		for (int j = 0;j < 5;j++) // 안쪽 for 루프: 열 반복
 		{
-			cout << "[" << i << "" << j << "]" ; // 각 좌표 출력
+			cout << "[" << i << "" << j << "]"; // 각 좌표 출력
 		}
 		cout << endl; // 각 행이 끝날 때마다 줄마꿈 출력
 	}
@@ -51,7 +51,7 @@ void main()
 	{
 		for (int j = 0; j < 5; j++)
 		{
-			if (i+j <= 4)
+			if (i + j <= 4)
 			{
 				cout << "*";
 			}
@@ -137,7 +137,7 @@ void main()
 		}
 		for (int j = 0; j < 5; j++)
 		{
-			if (i+j <= 4)
+			if (i + j <= 4)
 			{
 				cout << "*";
 			}

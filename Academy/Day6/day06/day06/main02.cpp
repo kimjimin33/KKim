@@ -63,8 +63,8 @@ void main()
 			break;
 		}
 		InitUserVariable();
-		}
 	}
+}
 void ChooseComputerNumber()
 {
 	// 컴퓨터가 랜덤 숫자를 뽑는다. (4자리)
@@ -131,7 +131,7 @@ void ChooseComputerNumber()
 	cout << "[디버기용] 입력한 computerNumber: ";
 	for (int i = 0;i < NUMBER_SIZE;i++)
 	{
-		cout <<computerNumber[i];
+		cout << computerNumber[i];
 	}
 	cout << endl;
 
@@ -140,7 +140,7 @@ void ChooseUserNumber()
 {
 	// 2. 유저가 랜덤숫자를 외친다
 	// 플레이어는 회마다 겹치지 않는 숫자를 부른다
-	
+
 	int tempNumber;
 	cout << "부를 숫자를 입력해주세요: ";
 
@@ -154,7 +154,7 @@ void ChooseUserNumber()
 	// 반복문으로 처리가능
 	for (int i = 0; i < NUMBER_SIZE;i++)
 	{
-		int length = NUMBER_SIZE -1 - i;
+		int length = NUMBER_SIZE - 1 - i;
 		int divNumber = 1;
 		for (int j = 0; j < length; j++)
 		{
@@ -162,18 +162,18 @@ void ChooseUserNumber()
 		}
 		userNumber[i] = tempNumber / divNumber % 10;
 	}
-		
+
 
 	cout << "[디버깅용]입력한 userNumber: ";
 	for (int i = 0; i < NUMBER_SIZE; i++)
 	{
 		cout << userNumber[i];
 	}
-	cout  << endl;
+	cout << endl;
 }
 void CheckValidationUserNumber()
 {
-	
+
 	//유저가 입력한게 아래 조건을 충족하면
 	// [조건]플레이어는 회마다 겹치지 않는 숫자를 부른다 (이때 첫 자리는 무조건 1이상)
 	// isUserNumberComplete = true 로 바꿔주고
@@ -188,10 +188,10 @@ void CheckValidationUserNumber()
 	for (int i = 0; i < NUMBER_SIZE; i++)
 	{
 		int checkNumber = userNumber[i];
-		for (int j = i+1; j < NUMBER_SIZE;j++)
+		for (int j = i + 1; j < NUMBER_SIZE;j++)
 		{
 			int checkNumber2 = userNumber[j];
-			
+
 			if (checkNumber == checkNumber2)
 			{
 				isUserNumberComplete = false;
@@ -210,7 +210,7 @@ void CheckValidationUserNumber()
 
 	// userNumber[1], userNumber[2]
 	// userNumber[1], userNumber[3]
-	
+
 	// userNumber[2], userNumber[3]
 
 
@@ -249,7 +249,7 @@ void CompareNumbers()
 }
 void PrintStrikeBallCount()
 {
-cout << strike << "스트라이크!" << ball << "볼!" << endl;
+	cout << strike << "스트라이크!" << ball << "볼!" << endl;
 }
 
 void InitUserVariable()
